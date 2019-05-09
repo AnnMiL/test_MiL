@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinterfaces.a  CMakeFiles/interfaces.dir/UserDefinedLoad.cpp.o
+/usr/bin/ranlib libinterfaces.a

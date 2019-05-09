@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsoft_sensor.a  CMakeFiles/soft_sensor.dir/LinearTemperatureSensor.cpp.o
+/usr/bin/ranlib libsoft_sensor.a

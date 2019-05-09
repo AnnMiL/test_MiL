@@ -1,0 +1,2 @@
+/usr/bin/ar qc libconfiguration.a  CMakeFiles/configuration.dir/StateTable.cpp.o CMakeFiles/configuration.dir/HyperStateTable.cpp.o CMakeFiles/configuration.dir/JobQueue.cpp.o CMakeFiles/configuration.dir/Scratch.cpp.o
+/usr/bin/ranlib libconfiguration.a

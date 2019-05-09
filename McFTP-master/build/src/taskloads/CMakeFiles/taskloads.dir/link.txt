@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskloads.a  CMakeFiles/taskloads.dir/MWC.cpp.o CMakeFiles/taskloads.dir/Benchmark.cpp.o CMakeFiles/taskloads.dir/BusyWait.cpp.o
+/usr/bin/ranlib libtaskloads.a

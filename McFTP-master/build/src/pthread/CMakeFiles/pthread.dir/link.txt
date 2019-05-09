@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpthread.a  CMakeFiles/pthread.dir/Priorities.cpp.o CMakeFiles/pthread.dir/Thread.cpp.o
+/usr/bin/ranlib libpthread.a

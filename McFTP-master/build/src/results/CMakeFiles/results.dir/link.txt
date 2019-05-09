@@ -1,0 +1,2 @@
+/usr/bin/ar qc libresults.a  CMakeFiles/results.dir/Runtime.cpp.o CMakeFiles/results.dir/CPUUsage.cpp.o CMakeFiles/results.dir/Statistics.cpp.o CMakeFiles/results.dir/JobLog.cpp.o CMakeFiles/results.dir/VectoredData.cpp.o CMakeFiles/results.dir/Trace.cpp.o CMakeFiles/results.dir/MissedDeadline.cpp.o
+/usr/bin/ranlib libresults.a

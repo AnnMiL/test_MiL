@@ -1,0 +1,2 @@
+/usr/bin/ar qc libperformance_counter.a  CMakeFiles/performance_counter.dir/event_info.cpp.o CMakeFiles/performance_counter.dir/PerformanceCounters.cpp.o
+/usr/bin/ranlib libperformance_counter.a

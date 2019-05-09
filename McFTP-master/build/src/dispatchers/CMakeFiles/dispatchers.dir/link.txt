@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdispatchers.a  CMakeFiles/dispatchers.dir/Periodic.cpp.o CMakeFiles/dispatchers.dir/Aperiodic.cpp.o CMakeFiles/dispatchers.dir/PeriodicJitter.cpp.o
+/usr/bin/ranlib libdispatchers.a

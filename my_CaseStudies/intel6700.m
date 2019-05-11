@@ -20,12 +20,11 @@ disp('loaded!')
 %streams = [100 150 0];
 %all_wcets = [14.2,9,3.6, 5.7]; %H.263 init
 
-%streams = [55 80 0];%H.263
-%all_wcets = [1.3,7.2,5.4, 2.2]; %H.263
+% streams = [55 80 0];%H.263
+% all_wcets = [1.3,7.2,5.4, 2.2]; %H.263
 
 streams = [60 90 0];%MP3
 all_wcets = [1.8 10.8 8.1 4.59]; 
-% all_wcets = [1.9 12 9 5.1];
 
 %streams = [30 45 0];%MADPlayer
 %all_wcets = [3.4,4.4,5.1, 6.8]; 

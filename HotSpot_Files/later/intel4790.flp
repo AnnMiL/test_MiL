@@ -1,0 +1,11 @@
+
+# Floorplan close to mine maybe
+# Line Format: <unit-name>\t<width>\t<height>\t<left-x>\t<bottom-y>\t[<specific-heat>]\t[<resistivity>]
+# all dimensions are in meters
+# comment lines begin with a '#'
+# comments and empty lines are ignored
+
+core1	0.011110	0.004200	0.000000	0.000000
+core2	0.011110	0.004200	0.000000	0.004200
+core3	0.011110	0.004200	0.011110	0.000000
+core4	0.011110	0.004200	0.011110	0.004200

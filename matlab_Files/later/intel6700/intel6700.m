@@ -52,7 +52,7 @@ resultData = getresultData();
 
 % [path2, savefile2] = getPath(option2);
 
-savefile3 = ['intel6700Test',num2str(step),'.mat'];
+savefile3 = ['intel7700HQTest',num2str(step),'.mat'];
 
 activeNum = 4;
 

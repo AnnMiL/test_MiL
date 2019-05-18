@@ -9,8 +9,8 @@ clear;
 % option2 = pathoptiset(mfilename('fullpath'), 'i','d','ARM4coresfloorplan.mat');
 % [~, savefile2] = getPath(option2);
 
-savefile1 = 'intel6700coresTM1e-05p.mat';
-savefile2 =  'intel6700coresfloorplan.mat';
+savefile1 = 'intel4790coresTM1e-05p.mat';
+savefile2 =  'intel4790coresfloorplan.mat';
 load(savefile1);
 load(savefile2);
 disp('loaded!')
@@ -52,7 +52,7 @@ resultData = getresultData();
 
 % [path2, savefile2] = getPath(option2);
 
-savefile3 = ['intel6700Test',num2str(step),'.mat'];
+savefile3 = ['intel4790Test',num2str(step),'.mat'];
 
 activeNum = 4;
 
@@ -77,7 +77,7 @@ control = ones(1,5);
 control(4) = 0;
 
 
-[newresultData] = varyingCoreNum(TM, config,control,0,'intel6700Test');
+[newresultData] = varyingCoreNum(TM, config,control,0,'intel4790Test');
 resultData = mergeResultData(resultData, newresultData);
 
 save(savefile3,'resultData');

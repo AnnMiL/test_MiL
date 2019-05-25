@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<experiment name="FBPT">
+	<duration unit="sec" value="150"/>
+	<processor core_number="4" fixed_active="false" fixed_frequency="false"/>
+	<temperature_sensors >
+		<sample_period unit="ms" value="100"/>
+		<hardware enabled = "true" >
+			<sensor_file1 path="/sys/class/hwmon/hwmon0/temp1_input"/>
+			<sensor_file2 path="/sys/class/hwmon/hwmon0/temp2_input"/>
+            <sensor_file3 path="/sys/class/hwmon/hwmon0/temp3_input"/>
+            <sensor_file4 path="/sys/class/hwmon/hwmon0/temp4_input"/>
+            <sensor_file5 path="/sys/class/hwmon/hwmon0/temp5_input"/>
+		</hardware>
+
+	</temperature_sensors>
+
+	<results path="./">
+		<temperature_from_hardware_sensors>
+			<global_peak_temperature save = "true"/>
+			<sensor_peak_temperature save = "true"/>
+			<sensor_mean_temperature save = "true"/>
+			<sensor_read_overhead    save = "true"/>
+			<sensor_temperature_trace save = "true"/>
+ 		</temperature_from_hardware_sensors>
+ 		<cpu_usage save = "true"/>
+
+	</results>
+
+
+	<tasks>
+		<task0 load_type="busy_wait" name="task0" periodicity="periodic" type="pipelined">
+			<period unit="ms" value="45"/>
+			<wcets unit="ms" value="[3.4,4.4,5.1,6.8]"/>
+			<attached_core value="0"/>
+		</task0>
+		<task1 load_type="busy_wait" name="task1" periodicity="periodic" type="pipelined">
+			<period unit="ms" value="45"/>
+			<wcets unit="ms" value="[3.4,4.4,5.1,6.8]"/>
+			<attached_core value="1"/>
+		</task1>
+		<task2 load_type="busy_wait" name="task2" periodicity="periodic" type="pipelined">
+			<period unit="ms" value="45"/>
+			<wcets unit="ms" value="[3.4,4.4,5.1,6.8]"/>
+			<attached_core value="2"/>
+		</task2>
+		<task3 load_type="busy_wait" name="task3" periodicity="periodic" type="pipelined">
+			<period unit="ms" value="45"/>
+			<wcets unit="ms" value="[3.4,4.4,5.1,6.8]"/>
+			<attached_core value="3"/>
+		</task3>
+		<task4 load_type="busy_wait" name="task4" periodicity="periodic" type="pipelined">
+			<period unit="ms" value="45"/>
+			<wcets unit="ms" value="[3.4,4.4,5.1,6.8]"/>
+			<attached_core value="0"/>
+		</task4>
+	</tasks>
+
+
+	<thermal_approach>
+		<kernel type="PTM">
+			<toff unit="ms" value="{3.0643, 3.2499, 2.5499, 0.8499}"/>
+			<ton unit="ms" value="{4.4, 5.4, 6.1, 7.8}"/>
+		</kernel>
+	</thermal_approach>
+</experiment>
+
+<ee>
+	</ee>
